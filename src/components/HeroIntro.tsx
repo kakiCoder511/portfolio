@@ -40,7 +40,7 @@ export default function HeroIntro() {
   options={{
     fullScreen: { enable: true, zIndex: -1 },
     background: {
-      color: { value: "#00001a" } // 保持極深藍色背景
+      color: { value: "#00001a" }
     },
     fpsLimit: 120,
 
