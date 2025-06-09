@@ -1,12 +1,44 @@
-# React + Vite
+# 🪐 Kaki Portfolio – Connecting Dots
+A modern, responsive portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and contact information through animated storytelling.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎬 Hero section with animated particles and intro
+- 🌌 About / Projects / Contacts / Footer sections
+- 🌈 Tailwind utility-first responsive design
+- 🧠 Modular component structure
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [tsParticles](https://particles.js.org/)
+- [Vite](https://vitejs.dev/)
+
+- ## 📁 Project Structure
+
+```plaintext
+src/
+├── components/
+│   ├── HeroIntro.tsx
+│   ├── AboutMe.jsx
+│   ├── Projects.jsx
+│   ├── Contacts.jsx
+│   └── Footer.jsx
+├── App.jsx
+└── index.css
+```
+## 📦 Getting Started
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/kakiCoder511/portfolio.git
+cd portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
