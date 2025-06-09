@@ -11,8 +11,10 @@ A modern, responsive portfolio website built with **React**, **TypeScript**, and
 
 > ⚠️ This site is still a work-in-progress. Components are being updated and improved regularly.
 
+## 🖼 Preview
 
-## ![Preview of Hero Session](./HeroIntro.png)
+![Hero Section Screenshot](./HeroIntro.png)
+
 
 ## 🛠 Tech Stack
 
@@ -21,7 +23,8 @@ A modern, responsive portfolio website built with **React**, **TypeScript**, and
 - [tsParticles](https://particles.js.org/)
 - [Vite](https://vitejs.dev/)
 
-- ## 📁 Project Structure
+- ## 📁 Project Structure 
+
 
 ```plaintext
 src/
