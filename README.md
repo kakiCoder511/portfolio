@@ -13,7 +13,8 @@ A modern, responsive portfolio website built with **React**, **TypeScript**, and
 
 ## 🖼 Preview
 
-![Hero Preview](https://raw.githubusercontent.com/kakiCoder511/portfolio/main/public/Hero.png)
+
+![Hero Preview](public/Hero.png)
 
 
 
