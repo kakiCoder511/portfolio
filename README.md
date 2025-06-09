@@ -12,7 +12,7 @@ A modern, responsive portfolio website built with **React**, **TypeScript**, and
 > ⚠️ This site is still a work-in-progress. Components are being updated and improved regularly.
 
 
-## ![Preview of Hero Session](./public/HeroIntro.png)
+## ![Preview of Hero Session](./HeroIntro.png)
 
 ## 🛠 Tech Stack
 
