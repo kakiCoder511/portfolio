@@ -1,3 +1,4 @@
+// AboutMe.jsx
 export default function IntroHeader() {
   return (
     <div
@@ -9,6 +10,8 @@ export default function IntroHeader() {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        height: "100%", // 填滿 section
+        width: "100%",
       }}
     >
       <h2>This is IntroHeader</h2>
