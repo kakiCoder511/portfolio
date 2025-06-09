@@ -1,5 +1,5 @@
 # 🪐 Kaki Portfolio – Connecting Dots 
-A modern, responsive portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and contact information through animated storytelling.
+A modern, responsive portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and contact information through storytelling.
 
 
 ## 🚀 Features
