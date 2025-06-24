@@ -1,53 +1,70 @@
-# 🪐 Kaki Portfolio – Connecting Dots 
-A modern, responsive portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and contact information through storytelling.
+# 🪐 Kaki Portfolio – Connecting Dots
 
+A modern, developer focused portfolio website built with **React**, showcasing key projects and a creative career journey, from storytelling to systems.
 
-## 🚀 Features
+> “You can’t connect the dots looking forward; you can only connect them looking backwards.” — *Steve Jobs*
 
-- 🎬 Hero section with animated particles and intro
-- 🌌 About / Projects / Contacts / Footer sections
-- 🌈 Tailwind utility-first responsive design
-- 🧠 Modular component structure
+---
 
-> ⚠️ This site is still a work-in-progress. Components are being updated and improved regularly.
+## 🚀 MVP Features (v1.0.0)
 
-## 🖼 Preview
+### Hero Section
+- Eye-catching intro with headline, subheading, and call-to-action button.
 
+### About Me Section
+- Scroll-activated fade-in animations introducing my creative background and transition into software development.
+- Includes interactive tech stack icons.
 
-![Hero Preview](public/Hero.png)
+### Project Section
+- Grid layout linking to key projects:
+  - **[NC News](https://nc-news-kaki.netlify.app/)** – Reddit-style fullstack news app
+  - **[Plantify App](https://www.northcoders.com/blog/plantify/)** – Gardening support mobile app
+  - **[Bus Radar App](https://github.com/kakiCoder511/BusRadarApp)** – Real-time curtailment alert tool for commuters
 
+### Footer
+- Dynamic year display
+- External links (GitHub / LinkedIn)
 
+---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [tsParticles](https://particles.js.org/)
-- [Vite](https://vitejs.dev/)
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-- ## 📁 Project Structure 
+### Animation
+- IntersectionObserver API
+- React Icons
 
+### Deployment
+- Netlify
 
-```plaintext
-src/
-├── components/
-│   ├── HeroIntro.tsx
-│   ├── AboutMe.jsx
-│   ├── Projects.jsx
-│   ├── Contacts.jsx
-│   └── Footer.jsx
-├── App.jsx
-└── index.css
-```
-## 📦 Getting Started
+---
+
+##  Future Roadmap
+
+### v1.1.0
+- Switch to more modern visual direction
+- Remove particle background and explore fluid SVG/motion-based hero
+- Font + layout overhaul using advanced Tailwind + typography utilities
+
+### v1.2.0
+- Add interactive chatbot or creative mini app (e.g., emotional support / photo tool)
+
+### v2.0.0
+- Implement headless CMS (e.g., Contentful / Sanity) for editable project entries
+- Support dark/light mode toggle
+- Add scroll-driven motion effects using Framer Motion or GSAP
+
+---
+
+## 📂 Getting Started
 
 ```bash
-# 1. Clone the repo
 git clone https://github.com/kakiCoder511/portfolio.git
 cd portfolio
-
-# 2. Install dependencies
 npm install
-
-# 3. Start development server
 npm run dev
