@@ -1,33 +1,83 @@
-/* HeroIntro.css */
-.hero-intro-wrapper {
-  height: 100vh;
-  position: relative;
-  background-color: transparent;
-  min-height: 100%;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #0d0d0d;
 }
 
-.hero-intro {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+.scroll-container {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
-  font-family: "Helvetica Neue", sans-serif;
-}
-
-.hero-content {
   position: relative;
-  z-index: 2;
-  padding: 2rem;
-  max-width: 800px;
+  padding: 4rem 2rem;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.global-particles {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
 }
+
+.about-section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-theme {
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.about-content {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+.hero-section,
+.about-section,
+.projects-section {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+
+footer {
+  margin-top: auto;
+
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  background-color: #0d0d0d;
+  color: #aaa;
+}
+
+

@@ -1,23 +1,81 @@
-// src/components/AboutMe.jsx
+// src/components/AboutMe.tsx
+import "./AboutMe.css";
+import { useEffect } from "react";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiPostgresql,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiGit,
+  SiVite,
+} from "react-icons/si";
+
+const paragraphs = [
+  "I didn't start in tech. My first 'code' was editing timelines in video productions.",
+  "After over 10 years shaping visual messages in the corporate world, I studied UX and wanted to build tools, not just design them.",
+  "Somewhere in between I became a London bus driver. That job taught me systems thinking, empathy, and calm under pressure.",
+  "Every dot behind a camera, the wheel, or the code, shaped how I think, listen, and build."
+];
 
 export default function AboutMe() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+    document.querySelectorAll(".fade-in-up").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="about-section">
-      <div className="about-content">
-        <h1>
-          Hi, I’m Kaki
-          <span className="subheading">
-            A fullstack developer connecting the dots between storytelling, structure, and everyday life.
-          </span>
+      <div className="particles-background"></div>
+      <div className="about-container">
+        <h1 className="main-heading">
+          Hi, I'm <span className="highlight">Kaki</span>
         </h1>
 
-        <p>I didn’t start in tech. My first “code” was editing timelines in video productions. I spent over 10 years shaping messages through visuals in the corporate world.</p>
+        <blockquote className="quote">
+          “You can’t connect the dots looking forward; you can only connect them looking backwards.”<br />
+          — Steve Jobs
+        </blockquote>
 
-        <p>After studying UX design in a bootcamp, I wanted to go further — to build tools, not just shape how they look. That’s how I found fullstack development.</p>
+        <div className="about-paragraphs">
+          {paragraphs.map((text, index) => (
+            <p
+              key={index}
+              className="fade-in-up paragraph bold-white"
+              style={{ transitionDelay: `${index * 200}ms` }}
+            >
+              {text}
+            </p>
+          ))}
+        </div>
 
-        <p>Somewhere in between, I also became a London bus driver — a role that taught me patience, real-world problem-solving, and how small systems affect people's everyday journeys.</p>
-
-        <p>Every dot — whether behind a camera, behind the wheel, or behind the code — has shaped how I think, listen, and build.</p>
+        <div className="tech-stack">
+          <h3 className="tech-stack-heading">Tech Stack</h3>
+          <div className="tech-stack-list jumbo-icons">
+            <SiJavascript title="JavaScript" />
+            <SiTypescript title="TypeScript" />
+            <SiReact title="React" />
+            <SiNodedotjs title="Node.js" />
+            <SiExpress title="Express" />
+            <SiPostgresql title="PostgreSQL" />
+            <SiHtml5 title="HTML5" />
+            <SiCss3 title="CSS3" />
+            <SiTailwindcss title="TailwindCSS" />
+            <SiGit title="Git" />
+            <SiVite title="Vite" />
+          </div>
+        </div>
       </div>
     </section>
   );

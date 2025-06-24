@@ -35,14 +35,14 @@ export default function HeroIntro() {
       <div className="hero-intro">
         <div className="hero-content">
           <h1 className="headline">
-            Hello, I’m <span className="highlight">Kaki</span><br />
+            Hello, I'm <span className="highlight">Kaki</span><br />
             Junior Software Developer
           </h1>
           <h2>
             A creative mind turned developer —<br />
             connecting stories, systems, and emotion.
           </h2>
-          <a href="#about" className="cta-btn">↓ View my work</a>
+          <a href="#projects" className="cta-btn">↓ View my work</a>
         </div>
       </div>
     </section>

@@ -58,11 +58,23 @@ html, body {
 
 .cta-btn {
   display: inline-block;
-  margin-top: 2rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid #ff4d6d;
+  font-size: 1rem;
+  font-weight: bold;
   color: #ff4d6d;
+  border: 2px solid #ff4d6d;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-  border-radius: 4px;
+  background: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 77, 109, 0.25);
 }
+
+.cta-btn:hover {
+  background: #ff4d6d;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 77, 109, 0.8),
+              0 0 24px rgba(255, 77, 109, 0.4);
+  transform: translateY(-2px);
+}
+
