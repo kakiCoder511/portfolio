@@ -1,15 +1,24 @@
 /* HeroIntro.css */
 html,
 body {
-  scroll-behavior: smooth;
+ 
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+.scroll-container {
+  overflow-y: auto;
+}
+
+.page {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
 body {
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  overflow: auto !important;
+  position: static !important;
 }
 
 .snap-section {
@@ -19,6 +28,7 @@ body {
 .hero-intro-wrapper {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-intro {

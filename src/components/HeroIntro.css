@@ -1,61 +1,55 @@
-/* HeroIntro.css */
-html,
-body {
-  scroll-behavior: smooth;
-  height: 100%;
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-body {
-  overflow-y: scroll;
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
   scroll-snap-type: y mandatory;
-  background-color: #0d0d0d; /* 確保整個頁面底色 */
 }
 
-.snap-section {
+.page {
+  height: 100vh;
   scroll-snap-align: start;
 }
 
 .hero-intro-wrapper {
-  height: 100vh;
   position: relative;
-  background-color: #0d0d0d; /* 確保無空白 */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.particles-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 .hero-intro {
   position: relative;
-  width: 100vw;
   height: 100%;
-  overflow: visible; /* 改回 visible，確保粒子唔被裁剪 */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  z-index: 1;
   color: white;
-  font-family: "Helvetica Neue", sans-serif;
-  background: transparent; /* 讓 Particles 背景主導 */
+  text-align: center;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 2rem;
   max-width: 800px;
+  padding: 2rem;
 }
 
-.hero-content h1.headline {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1.3;
+.headline {
+  font-size: 2.75rem;
   margin: 0;
-}
-
-.hero-content h2 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-top: 1.2rem;
-  margin-bottom: 0;
 }
 
 .highlight {
@@ -71,10 +65,4 @@ body {
   text-decoration: none;
   font-weight: 500;
   border-radius: 4px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.cta-btn:hover {
-  background: #ff4d6d;
-  color: white;
 }
