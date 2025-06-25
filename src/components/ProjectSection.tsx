@@ -1,5 +1,4 @@
 // src/components/ProjectSection.tsx
-import './ProjectSection.css';
 
 const projects = [
   {
