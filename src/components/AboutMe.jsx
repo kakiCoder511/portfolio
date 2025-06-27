@@ -53,6 +53,7 @@ export default function AboutMe() {
 
             <blockquote className="quote">
               “You can't connect the dots looking forward; you can only connect them looking backwards.”
+              ---- Steve Jobs
             </blockquote>
 
             <div className="about-paragraphs">
