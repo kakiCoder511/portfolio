@@ -13,7 +13,7 @@ const projects = [
     link: 'https://www.northcoders.com/blog/plantify/'
   },
   {
-    title: 'Bus Radar App',
+    title: 'Bus Radar App (in progress)',
     description: 'Built from first-hand experience as a London bus driver, BusRadar helps commuters avoid curtailments by combining live data, risk prediction logic and clean visual feedback in a mobile-friendly app.',
     link: 'https://github.com/kakiCoder511/BusRadarApp'
   },
