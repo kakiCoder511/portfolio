@@ -1,34 +1,44 @@
+/* === About Me Section === */
+
 .about-section {
   padding: 4rem 2rem;
-  background: transparent;
   color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .about-grid {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .photo-wrapper {
-  flex: 0 0 420px; 
-  margin: 0%;
-  padding: 0;
+  flex: 1 1 300px;
+  max-width: 420px;
 }
 
 .profile-photo {
   width: 100%;
   height: auto;
-  border-radius: 50%; 
+  border-radius: 50%;
   display: block;
   object-fit: cover;
 }
 
 .about-content {
-  flex: 1;
+  flex: 1 1 300px;
+  min-width: 0;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .main-heading {
@@ -37,7 +47,7 @@
 }
 
 .highlight {
-  color: #f04f78;  
+  color: #f04f78; /* Brand highlight */
 }
 
 .quote {
@@ -49,10 +59,11 @@
 .paragraph {
   margin-bottom: 1rem;
   line-height: 1.6;
-  font-size:large;
-  font-weight:700;
-  font-family:Arial, Helvetica, sans-serif;
-  color: #cdd0ac;
+  font-size: large;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cdd0ac; /* Brand paragraph tone */
+  word-wrap: break-word;
 }
 
 .extra-content {
@@ -61,7 +72,7 @@
 
 .extra-content h3 {
   margin-top: 1.5rem;
-  color: #f04f78;
+  color: #f04f78; /* Brand highlight */
 }
 
 .extra-content ul {
@@ -77,7 +88,7 @@
 .tech-stack-heading {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: #f04f78; 
+  color: #f04f78; /* Brand highlight */
 }
 
 .tech-stack-list {
@@ -88,16 +99,23 @@
 }
 
 .tech-stack-list svg {
-  width: 56px;  
+  width: 56px;
   height: 56px;
-  color: #f0f0f0; 
+  color: #f0f0f0; /* Brand icon base */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .tech-stack-list svg:hover {
   transform: scale(1.15);
-  color: #f04f78;
+  color: #f04f78; /* Brand highlight on hover */
 }
+
+.hobbies-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* === Responsive === */
 
 @media (max-width: 768px) {
   .about-grid {
@@ -107,15 +125,7 @@
   }
 
   .photo-wrapper {
-    margin-bottom: 0;
-  }
-
-  .profile-photo {
-    display: block;
-  }
-
-  .about-content {
-    width: 100%;
-    max-width: 600px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }

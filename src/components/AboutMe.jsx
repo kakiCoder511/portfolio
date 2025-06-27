@@ -1,5 +1,7 @@
 import "./AboutMe.css";
+import "./HobbiesSlider.css";
 import { useEffect } from "react";
+import HobbiesSlider from "./HobbiesSlider";
 import {
   SiJavascript,
   SiTypescript,
@@ -90,26 +92,28 @@ export default function AboutMe() {
 
               <h3>Besides work, I love to...</h3>
               <p>Photography, painting, travelling and something fun!</p>
-             {/* <div className="hobbies-section">
-              < HobbiesSlider/></div>  */}
             </div>
+          </div>
+        </div>
 
-            <div className="tech-stack" >
-              <h3 className="tech-stack-heading">Tech Stack</h3>
-              <div className="tech-stack-list jumbo-icons">
-                <SiJavascript title="JavaScript" />
-                <SiTypescript title="TypeScript" />
-                <SiReact title="React" />
-                <SiNodedotjs title="Node.js" />
-                <SiExpress title="Express" />
-                <SiPostgresql title="PostgreSQL" />
-                <SiHtml5 title="HTML5" />
-                <SiCss3 title="CSS3" />
-                <SiTailwindcss title="TailwindCSS" />
-                <SiGit title="Git" />
-                <SiVite title="Vite" />
-              </div>
-            </div>
+        <div className="hobbies-section">
+          <HobbiesSlider />
+        </div>
+
+        <div className="tech-stack">
+          <h3 className="tech-stack-heading">Tech Stack</h3>
+          <div className="tech-stack-list jumbo-icons">
+            <SiJavascript title="JavaScript" />
+            <SiTypescript title="TypeScript" />
+            <SiReact title="React" />
+            <SiNodedotjs title="Node.js" />
+            <SiExpress title="Express" />
+            <SiPostgresql title="PostgreSQL" />
+            <SiHtml5 title="HTML5" />
+            <SiCss3 title="CSS3" />
+            <SiTailwindcss title="TailwindCSS" />
+            <SiGit title="Git" />
+            <SiVite title="Vite" />
           </div>
         </div>
       </div>
