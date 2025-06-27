@@ -14,14 +14,16 @@
 }
 
 .photo-wrapper {
-  flex: 0 10 520px;
+  flex: 0 0 420px; 
+  margin: 0%;
+  padding: 0;
 }
 
 .profile-photo {
   width: 100%;
   height: auto;
-  border-radius: 500%;
-  color: beige;
+  border-radius: 50%; 
+  display: block;
   object-fit: cover;
 }
 
@@ -32,6 +34,10 @@
 .main-heading {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #f04f78;  
 }
 
 .quote {
@@ -50,6 +56,7 @@
 
 .extra-content h3 {
   margin-top: 1.5rem;
+  color: #f04f78;
 }
 
 .extra-content ul {
@@ -65,29 +72,27 @@
 .tech-stack-heading {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: chocolate;
+  color: #f04f78; 
 }
 
 .tech-stack-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem; 
+  gap: 1.5rem;
 }
 
 .tech-stack-list svg {
-  width: 48px; /* icon size */
-  height: 48px;
-  color:  chocolate;;
-  transition: transform 0.3s ease;
+  width: 56px;  
+  height: 56px;
+  color: #f0f0f0; 
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .tech-stack-list svg:hover {
   transform: scale(1.15);
-  color: #00ffff; 
+  color: #f04f78; /* Hover 同 Kaki 色 */
 }
-
-
 
 @media (max-width: 768px) {
   .about-grid {
@@ -97,10 +102,15 @@
   }
 
   .photo-wrapper {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
+  }
+
+  .profile-photo {
+    display: block;
   }
 
   .about-content {
-    text-align: left;
+    width: 100%;
+    max-width: 600px;
   }
 }

@@ -85,14 +85,14 @@ export default function AboutMe() {
                 <li>Open-minded — open to feedback</li>
                 <li>Adaptable — flexible in new environments</li>
                 <li>Integrity — do my best at work</li>
-                <li>Empathy — understand people’s feelings</li>
+                <li>Empathy — understand people's feelings</li>
               </ul>
 
               <h3>Besides work, I love to...</h3>
               <p>Photography, painting, travelling and something fun!</p>
             </div>
 
-            <div className="tech-stack">
+            <div className="tech-stack" >
               <h3 className="tech-stack-heading">Tech Stack</h3>
               <div className="tech-stack-list jumbo-icons">
                 <SiJavascript title="JavaScript" />
