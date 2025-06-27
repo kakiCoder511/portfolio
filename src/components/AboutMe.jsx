@@ -13,6 +13,7 @@ import {
   SiGit,
   SiVite,
 } from "react-icons/si";
+import HobbiesSlider from "./HobbiesSilder";
 
 const paragraphs = [
   "I didn't start in tech. My first 'code' was editing timelines in video productions.",
@@ -90,6 +91,7 @@ export default function AboutMe() {
 
               <h3>Besides work, I love to...</h3>
               <p>Photography, painting, travelling and something fun!</p>
+              < HobbiesSlider/>
             </div>
 
             <div className="tech-stack" >

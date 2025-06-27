@@ -8,7 +8,7 @@ const projects = [
     link: 'https://nc-news-kaki.netlify.app/'
   },
   {
-    title: 'Plantify App',
+    title: 'Plantify App - Team Project',
     description: 'A React Native mobile app designed to support gardening enthusiasts. Key features include daily plant recommendations, a plant identification quiz, gardening tips, weather updates, and a personal journal for tracking progress.',
     link: 'https://www.northcoders.com/blog/plantify/'
   },
