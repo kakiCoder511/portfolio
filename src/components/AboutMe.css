@@ -96,7 +96,7 @@
 
 .tech-stack-list svg:hover {
   transform: scale(1.15);
-  color: #f04f78; /* Hover 同 Kaki 色 */
+  color: #f04f78;
 }
 
 @media (max-width: 768px) {
