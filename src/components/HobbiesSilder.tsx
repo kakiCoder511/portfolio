@@ -1,4 +1,4 @@
-import "./HobbiesSlider.css";
+import "./AboutMe.css";
 
 const images = [
   "/Projects/hobbies/5C9C9E04-488B-4D47-A974-4D2A4D4ABDDA.JPG",
