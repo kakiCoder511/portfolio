@@ -1,94 +1,106 @@
-/* src/styles/AboutMe.css */
 .about-section {
-  background-color: #000; /* black background */
-  color: #fff;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
+  background: #0d0d0d;
+  color: #f0f0f0;
+}
+
+.about-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.about-container {
-  max-width: 900px;
+.photo-wrapper {
+  flex: 0 0 420px;
+}
+
+.profile-photo {
   width: 100%;
+  height: auto;
+  border-radius: 500%;
+  color: beige;
+  object-fit: cover;
 }
 
-.about-section h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  text-align: center;
-  color: #fff;
+.about-content {
+  flex: 1;
 }
 
-.about-section h1 span {
-  color: #ff4d6d;
-}
-
-.about-section h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #aaa;
-}
-
-.about-section blockquote {
-  margin-top: 2rem;
-  font-style: italic;
-  font-size: 1.25rem;
-  color: #888;
-  text-align: center;
-}
-
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-out;
-}
-
-.fade-in-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.about-paragraphs {
-  margin-top: 3rem;
-}
-
-.about-paragraphs p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #ff4d6d;
-}
-
-/* Tech Stack */
-.tech-stack {
-  margin-top: 4rem;
-  text-align: center;
-}
-
-.tech-stack h3 {
-  font-size: 1.5rem;
-  color: #fff;
+.main-heading {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.extra-content {
+  margin-top: 2rem;
+}
+
+.extra-content h3 {
+  margin-top: 1.5rem;
+}
+
+.extra-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.tech-stack {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.tech-stack-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: chocolate;
 }
 
 .tech-stack-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 1.5rem; 
 }
 
-.tech-stack-list span {
-  background-color: #fff;
-  color: #000;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.tech-stack-list svg {
+  width: 48px; /* icon size */
+  height: 48px;
+  color:  chocolate;;
+  transition: transform 0.3s ease;
 }
 
-.tech-stack-list span:hover {
-  background-color: #ff4d6d;
-  color: #fff;
+.tech-stack-list svg:hover {
+  transform: scale(1.15);
+  color: #00ffff; 
+}
+
+
+
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content {
+    text-align: left;
+  }
 }

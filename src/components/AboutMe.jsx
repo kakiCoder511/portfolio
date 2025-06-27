@@ -1,4 +1,3 @@
-// src/components/AboutMe.tsx
 import "./AboutMe.css";
 import { useEffect } from "react";
 import {
@@ -37,43 +36,77 @@ export default function AboutMe() {
 
   return (
     <section className="about-section">
-      <div className="particles-background"></div>
       <div className="about-container">
-        <h1 className="main-heading">
-          Hi, I'm <span className="highlight">Kaki</span>
-        </h1>
+        <div className="about-grid">
+          <div className="photo-wrapper fade-in-up">
+            <img
+              src="/AboutmeProfilepic.png"
+              alt="Kaki Lai"
+              className="profile-photo"
+            />
+          </div>
 
-        <blockquote className="quote">
-          “You can’t connect the dots looking forward; you can only connect them looking backwards.”<br />
-          — Steve Jobs
-        </blockquote>
+          <div className="about-content">
+            <h1 className="main-heading">
+              Hi, I'm <span className="highlight">Kaki</span>
+            </h1>
 
-        <div className="about-paragraphs">
-          {paragraphs.map((text, index) => (
-            <p
-              key={index}
-              className="fade-in-up paragraph bold-white"
-              style={{ transitionDelay: `${index * 200}ms` }}
-            >
-              {text}
-            </p>
-          ))}
-        </div>
+            <blockquote className="quote">
+              “You can't connect the dots looking forward; you can only connect them looking backwards.”
+            </blockquote>
 
-        <div className="tech-stack">
-          <h3 className="tech-stack-heading">Tech Stack</h3>
-          <div className="tech-stack-list jumbo-icons">
-            <SiJavascript title="JavaScript" />
-            <SiTypescript title="TypeScript" />
-            <SiReact title="React" />
-            <SiNodedotjs title="Node.js" />
-            <SiExpress title="Express" />
-            <SiPostgresql title="PostgreSQL" />
-            <SiHtml5 title="HTML5" />
-            <SiCss3 title="CSS3" />
-            <SiTailwindcss title="TailwindCSS" />
-            <SiGit title="Git" />
-            <SiVite title="Vite" />
+            <div className="about-paragraphs">
+              {paragraphs.map((text, index) => (
+                <p
+                  key={index}
+                  className="fade-in-up paragraph"
+                  style={{ transitionDelay: `${index * 200}ms` }}
+                >
+                  {text}
+                </p>
+              ))}
+            </div>
+
+            <div className="extra-content fade-in-up">
+              <h3>What I bring from my previous experiences:</h3>
+              <ul>
+                <li>Creativity in solving problems</li>
+                <li>Observation and analytic skills</li>
+                <li>Collaboration with different kinds of people</li>
+                <li>Curiosity about technology and humans</li>
+              </ul>
+
+              <h3>How would my friends describe me:</h3>
+              <ul>
+                <li>Proactive — always learning and exploring</li>
+                <li>Creative — love generating new ideas</li>
+                <li>Motivated — do what I love with energy</li>
+                <li>Open-minded — open to feedback</li>
+                <li>Adaptable — flexible in new environments</li>
+                <li>Integrity — do my best at work</li>
+                <li>Empathy — understand people’s feelings</li>
+              </ul>
+
+              <h3>Besides work, I love to...</h3>
+              <p>Photography, painting, travelling and something fun!</p>
+            </div>
+
+            <div className="tech-stack">
+              <h3 className="tech-stack-heading">Tech Stack</h3>
+              <div className="tech-stack-list jumbo-icons">
+                <SiJavascript title="JavaScript" />
+                <SiTypescript title="TypeScript" />
+                <SiReact title="React" />
+                <SiNodedotjs title="Node.js" />
+                <SiExpress title="Express" />
+                <SiPostgresql title="PostgreSQL" />
+                <SiHtml5 title="HTML5" />
+                <SiCss3 title="CSS3" />
+                <SiTailwindcss title="TailwindCSS" />
+                <SiGit title="Git" />
+                <SiVite title="Vite" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
