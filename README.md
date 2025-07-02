@@ -31,9 +31,7 @@ A modern, developer focused portfolio website built with **React**, showcasing k
 
 ### Frontend
 - React
-- TypeScript
 - Vite
-- Tailwind CSS
 
 ### Animation
 - IntersectionObserver API
