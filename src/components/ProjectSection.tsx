@@ -17,6 +17,12 @@ const projects = [
     description: 'Built from first-hand experience as a London bus driver, BusRadar helps commuters avoid curtailments by combining live data, risk prediction logic and clean visual feedback in a mobile-friendly app.',
     link: 'https://github.com/kakiCoder511/BusRadarApp'
   },
+   {
+    title: 'Trading Signal Backend',
+    description:
+      'A back-end system for analysing stock momentum signals, focusing on indicators like RSI, volume spikes, and bullish streaks. Provides actionable insights for short-term trading through API endpoints.',
+    link: 'https://github.com/kakiCoder511/trading-signal-backend-',
+  },
   {title:'Pluto Pay UX Project',
     description: 'A UX case study for a financial mobile app that helps users manage shopping, money transfers, and savings with clear user flows, research, ideation and prototyping.',
     link:"/Projects/plutopay/plutopay.html", 
