@@ -1,4 +1,4 @@
-# 🪐 Kaki Portfolio – Connecting Dots
+# 🪐 Kaki Portfolio – Connecting Dots (https://kakilai.netlify.app/)
 
 A modern, developer focused portfolio website built with **React**, showcasing key projects and a creative career journey, from storytelling to systems.
 
@@ -20,6 +20,8 @@ A modern, developer focused portfolio website built with **React**, showcasing k
   - **[NC News](https://nc-news-kaki.netlify.app/)** – Reddit-style fullstack news app
   - **[Plantify App](https://www.northcoders.com/blog/plantify/)** – Gardening support mobile app
   - **[Bus Radar App](https://github.com/kakiCoder511/BusRadarApp)** – Real-time curtailment alert tool for commuters
+   - **[Pluto Pay UX Project](/Projects/plutopay/plutopay.html)** – UX case study for a financial mobile app
+  - **[Trading Signal Backend](https://github.com/kakiCoder511/trading-signal-backend-)** – API-driven stock momentum analysis tool
 
 ### Footer
 - Dynamic year display
