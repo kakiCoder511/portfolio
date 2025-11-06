@@ -19,7 +19,7 @@ import {
 const paragraphs = [
   "I didn't start in tech. My first 'code' was editing timelines in video productions.",
   "After over 10 years shaping visual messages in the corporate world, I studied UX and wanted to build tools, not just design them.",
-  "Somewhere in between I became a London bus driver. That job taught me systems thinking, empathy, and calm under pressure.",
+  "Somewhere in-between I became a London bus driver. That job taught me systems thinking, empathy, and calm under pressure.",
   "Every dot behind a camera, the wheel, or the code, shaped how I think, listen, and build."
 ];
 
@@ -90,7 +90,7 @@ export default function AboutMe() {
                 <li>Empathy — understand people's feelings</li>
               </ul>
 
-              <h3>Besides work, I love to...</h3>
+              <h3>Besides work, I love ...</h3>
               <p>Photography, painting, travelling and something fun!</p>
             </div>
           </div>
