@@ -17,10 +17,12 @@ import {
 } from "react-icons/si";
 
 const paragraphs = [
+  
   "I didn't start in tech. My first 'code' was editing timelines in video productions.",
   "After over 10 years shaping visual messages in the corporate world, I studied UX and wanted to build tools, not just design them.",
-  "Somewhere in-between I became a London bus driver. That job taught me systems thinking, empathy, and calm under pressure.",
-  "Every dot behind a camera, the wheel, or the code, shaped how I think, listen, and build."
+  "Somewhere in-between I became a London bus driver. Beyond the wheel, I learned systems thinking — seeing how every message from the control room, every delay, and every passenger interaction connects to the whole journey.",
+  "Every dot behind a camera, the wheel, or the code has shaped how I think, listen, and build."
+
 ];
 
 export default function AboutMe() {
@@ -58,13 +60,9 @@ export default function AboutMe() {
               ---- Steve Jobs
             </blockquote>
 
-            <div className="about-paragraphs">
+             <div className="about-paragraphs">
               {paragraphs.map((text, index) => (
-                <p
-                  key={index}
-                  className="fade-in-up paragraph"
-                  style={{ transitionDelay: `${index * 200}ms` }}
-                >
+                <p key={index} className="paragraph">
                   {text}
                 </p>
               ))}
